@@ -1,0 +1,306 @@
+html{
+    scroll-behavior:smooth
+}
+
+body {
+	font-family: Raleway, Helvetica, sans-serif;
+	color: #fff;
+	margin: 0px;
+}
+
+#intro {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    height: 100vh;
+    min-height: 35em;
+    overflow: hidden;
+}
+
+#intro h2 {
+    display: inline-block;
+    font-size: 1.75em;
+    opacity: 1;
+    padding: 0.35em;
+    position: relative;
+    z-index: 1;
+    line-height: 1.75em;
+    color: #fff;
+    font-weight: 800;
+    letter-spacing: 0.225em;
+    line-height: 1.75em;
+    margin: 0 0 1em 0;
+    text-transform: uppercase;
+}
+
+#intro h2:before {
+    top: 0;
+    left: 0;
+}
+
+#intro h2:after {
+    bottom: 0;
+    right: 0;
+}
+
+#intro h2:before, #intro h2:after {
+    -moz-transition: width 0.85s ease;
+    -webkit-transition: width 0.85s ease;
+    -ms-transition: width 0.85s ease;
+    transition: width 0.85s ease;
+    -moz-transition-delay: 0.25s;
+    -webkit-transition-delay: 0.25s;
+    -ms-transition-delay: 0.25s;
+    transition-delay: 0.25s;
+    background: #fff;
+    content: '';
+    display: block;
+    height: 2px;
+    position: absolute;
+    width: 100%;
+}
+
+#intro p {
+	font-size: 0.8em;
+    letter-spacing: 0.225em;
+    text-transform: uppercase;
+}
+
+#intro .more {
+    -moz-transition: -moz-transform 0.75s ease, opacity 0.75s ease;
+    -webkit-transition: -webkit-transform 0.75s ease, opacity 0.75s ease;
+    -ms-transition: -ms-transform 0.75s ease, opacity 0.75s ease;
+    transition: transform 0.75s ease, opacity 0.75s ease;
+    -moz-transition-delay: 3.5s;
+    -webkit-transition-delay: 3.5s;
+    -ms-transition-delay: 3.5s;
+    transition-delay: 3.5s;
+    -moz-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+    border: none;
+    bottom: 0;
+    color: inherit;
+    font-size: 0.8em;
+    height: 8.5em;
+    left: 50%;
+    letter-spacing: 0.225em;
+    margin-left: -8.5em;
+    opacity: 1;
+    outline: 0;
+    padding-left: 0.225em;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    width: 16em;
+    z-index: 1;
+    text-decoration: none;
+}
+
+#intro .more:after {
+    background-image: url(images/arrow.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    bottom: 4em;
+    content: '';
+    display: block;
+    height: 1.5em;
+    left: 50%;
+    margin: 0 0 0 -0.75em;
+    position: absolute;
+    width: 1.5em;
+}
+
+#about, #games {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.full-size {
+    display: block;
+    background-color: #fff;
+    color: #000;
+    padding: 4em 0 4em 0;
+    text-align: center;
+}
+
+.full-size-2 {
+    display: block;
+    background-color: #f6f6f6;
+    color: #000;
+    padding: 4em 0 4em 0;
+    text-align: center;
+}
+
+.full-size p, .full-size-2 p {
+    font-size: 0.8em;
+    letter-spacing: 0.225em;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.full-size a, .full-size-2 a {
+    font-size: 1.2em;
+    font-weight: bold;
+    letter-spacing: 0.225em;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    max-width: 900px;
+    text-decoration: none;
+    color: #000;
+}
+
+a:before, a:after {
+    -moz-transition: -moz-transform 0.2s ease-out;
+    -webkit-transition: -webkit-transform 0.2s ease-out;
+    -ms-transition: -ms-transform 0.2s ease-out;
+    transition: transform 0.1s ease-out;
+}
+
+a:hover:before, a:hover:after {
+    -moz-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.3);
+}
+
+.full-size .play:before, .full-size-2 .play:before {
+    background-image: url(images/play.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: '';
+    display: inline-block;
+    height: 1em;
+    left: 50%;
+    vertical-align: top;
+    width: 1em;
+    margin-right: 0.3em;
+}
+
+.full-size h2 {
+    display: inline-block;
+    font-size: 1.75em;
+    opacity: 1;
+    position: relative;
+    z-index: 1;
+    font-weight: 900;
+    letter-spacing: 0.225em;
+    text-transform: uppercase;
+}
+
+.full-size h3, .full-size-2 h3 {
+    font-size: 1.2em;
+    letter-spacing: 0.225em;
+    text-transform: uppercase;
+}
+
+.separator {
+    background: #f6f6f6;
+    display: block;
+    margin: 4em auto;
+    height: 2px;
+    width: 100%;
+    max-width: 900px;
+}
+
+.profile-picture {
+    overflow: hidden;
+    width: 95%;
+    max-width: 900px;
+    display: block;
+    margin: 2em auto;
+}
+
+.profile-picture img {
+	width: 100%;
+    -moz-transition: -moz-transform 0.2s ease-out;
+    -webkit-transition: -webkit-transform 0.2s ease-out;
+    -ms-transition: -ms-transform 0.2s ease-out;
+    transition: transform 0.2s ease-out;
+    border: solid 2px white;
+}
+
+.profile-picture img:hover {
+    -moz-transform: scale(1.015);
+    -webkit-transform: scale(1.015);
+    -ms-transform: scale(1.015);
+    transform: scale(1.015);
+}
+
+.parallax-background {
+    background-image: url("images/background.png");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: repeat;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.slider {
+    width: 95%;
+    max-width: 900px;
+    height: 500px;
+    display: flex;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.full-size .slider {
+    border: solid 2px white;
+}
+
+.full-size-2 .slider {
+    border: solid 2px #f6f6f6;
+}
+
+.slide {
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.full-size .slide {
+    border: solid 2px white;
+}
+
+.full-size-2 .slide {
+    border: solid 2px #f6f6f6;
+}
+
+.slide img {
+    height: 100%;
+    -moz-transition: -moz-transform 0.2s ease-out;
+    -webkit-transition: -webkit-transform 0.2s ease-out;
+    -ms-transition: -ms-transform 0.2s ease-out;
+    transition: transform 0.2s ease-out;
+}
+
+.slide img:hover {
+    -moz-transform: scale(1.015);
+    -webkit-transform: scale(1.015);
+    -ms-transform: scale(1.015);
+    transform: scale(1.015);
+}
+
