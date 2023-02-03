@@ -356,7 +356,6 @@ a:hover:before, a:hover:after {
 
     #about p {
         text-align: justify;
-        font-size: 15px;
     }
 
     .profile-picture {
@@ -377,16 +376,15 @@ a:hover:before, a:hover:after {
     }
 
     .full-size h2, .full-size-2 h2 {
-        font-size: 20px;
+        font-size: 2.5em;
     }
 
     .full-size h3, .full-size-2 h3 {
-        font-size: 18px;
+        font-size: 0.8em;
     }    
 
     .full-size p, .full-size-2 p {
         line-height: 1.5em;
-        font-size: 15px;
     }
 
     .full-size .play:before, .full-size-2 .play:before {
@@ -402,10 +400,10 @@ a:hover:before, a:hover:after {
     }
 
     #contact p {
-        font-size: 15px;
+        font-size: 0.6em;
     }
 
     footer {
-        font-size: 10px;
+        font-size: 0.5em;
     }
 }
