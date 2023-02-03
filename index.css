@@ -267,6 +267,10 @@ a:hover:before, a:hover:after {
     transform: scale(1.015);
 }
 
+#profile-picture-mobile {
+    display: none;
+}
+
 .parallax-background {
     background-image: url("images/background.jpg");
     min-height: 500px;
@@ -326,7 +330,7 @@ a:hover:before, a:hover:after {
 
 @media screen and (max-width: 1000px) {
     body {
-        font-size: 13px;
+        font-size: 15px;
     }
 
     #intro, #about, #games {
@@ -359,6 +363,14 @@ a:hover:before, a:hover:after {
         max-width: unset;
     }
 
+    #profile-picture-desktop {
+        display: none;
+    }
+
+    #profile-picture-mobile {
+        display: block;
+    }
+
     .full-size, .full-size-2 {
         padding: 4em 0;
     }
@@ -384,7 +396,7 @@ a:hover:before, a:hover:after {
     .slider {
         width: 100%;
         max-width: unset;
-        height: 400px;
+        height: 580px;
     }
 
     #contact p {
