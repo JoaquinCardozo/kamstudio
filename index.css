@@ -4,6 +4,7 @@ html{
 
 body {
 	font-family: Raleway, Helvetica, sans-serif;
+    font-size: 11pt;
 	color: #e1e1e1;
 	margin: 0px;
 }
@@ -153,7 +154,7 @@ footer {
     display: block;
     background-color: #ebebeb;
     color: #1e1e1e;
-    padding: 4em 0 4em 0;
+    padding: 4em;
     text-align: center;
 }
 
@@ -161,7 +162,7 @@ footer {
     display: block;
     background-color: #e3e3e3;
     color: #1e1e1e;
-    padding: 4em 0 4em 0;
+    padding: 4em;
     text-align: center;
 }
 
@@ -323,3 +324,60 @@ a:hover:before, a:hover:after {
     transform: scale(1.015);
 }
 
+@media screen and (max-width: 1000px) {
+    #intro {
+        padding: 7em 3em 5em 3em;
+        height: 50%;
+    }
+
+    #intro h2 {
+        font-size: 3.75em;
+    }
+
+    #intro p {
+        font-size: 1.5em;
+    }
+
+    .more {
+        display: none;
+    }
+
+    #about p {
+        text-align: justify;
+    }
+
+    .profile-picture {
+        width: 100%;
+    }
+
+    .full-size h2, .full-size-2 h2 {
+        font-size: 2.5em;
+    }
+
+    .full-size h3, .full-size-2 h3 {
+        font-size: 0.8em;
+    }    
+
+    .full-size p, .full-size-2 p {
+        line-height: 1.5em;
+    }
+
+    .full-size .play:before, .full-size-2 .play:before {
+        height: 2em;
+        margin-right: 1.3em;
+        vertical-align: unset;
+    }
+
+    .slider {
+        width: 100%;
+        height: 400px;
+    }
+
+    #contact p {
+        font-size: 0.6em;
+    }
+
+    footer {
+        font-size: 0.5em;
+    }
+}
