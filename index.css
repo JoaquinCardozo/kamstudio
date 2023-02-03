@@ -325,6 +325,10 @@ a:hover:before, a:hover:after {
 }
 
 @media screen and (max-width: 1000px) {
+    body {
+        font-size: 13px;
+    }
+
     #intro, #about, #games {
         width: 100%;
         padding: 0;
@@ -356,7 +360,6 @@ a:hover:before, a:hover:after {
     }
 
     .full-size, .full-size-2 {
-        margin: 4em 0;
         padding: 4em 0;
     }
 
