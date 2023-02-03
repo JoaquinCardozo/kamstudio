@@ -4,8 +4,18 @@ html{
 
 body {
 	font-family: Raleway, Helvetica, sans-serif;
-	color: #fff;
+	color: #e1e1e1;
 	margin: 0px;
+}
+
+footer {
+    font-family: Raleway, Helvetica, sans-serif;
+    font-size: 0.7em;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px;
+    background-color: #1e1e1e;
+    color: #e1e1e1;
 }
 
 #intro {
@@ -36,7 +46,7 @@ body {
     position: relative;
     z-index: 1;
     line-height: 1.75em;
-    color: #fff;
+    color: #e1e1e1;
     font-weight: 800;
     letter-spacing: 0.225em;
     line-height: 1.75em;
@@ -63,7 +73,7 @@ body {
     -webkit-transition-delay: 0.25s;
     -ms-transition-delay: 0.25s;
     transition-delay: 0.25s;
-    background: #fff;
+    background: #e1e1e1;
     content: '';
     display: block;
     height: 2px;
@@ -71,7 +81,7 @@ body {
     width: 100%;
 }
 
-#intro p {
+#intro p, #contact p {
 	font-size: 0.8em;
     letter-spacing: 0.225em;
     text-transform: uppercase;
@@ -124,6 +134,15 @@ body {
     width: 1.5em;
 }
 
+#contact {
+    text-align: center;
+    margin: 80px;
+}
+
+#contact a {
+    color: #e1e1e1;
+}
+
 #about, #games {
     width: 80%;
     margin: auto;
@@ -132,16 +151,16 @@ body {
 
 .full-size {
     display: block;
-    background-color: #fff;
-    color: #000;
+    background-color: #ebebeb;
+    color: #1e1e1e;
     padding: 4em 0 4em 0;
     text-align: center;
 }
 
 .full-size-2 {
     display: block;
-    background-color: #f6f6f6;
-    color: #000;
+    background-color: #e3e3e3;
+    color: #1e1e1e;
     padding: 4em 0 4em 0;
     text-align: center;
 }
@@ -166,7 +185,7 @@ body {
     width: 100%;
     max-width: 900px;
     text-decoration: none;
-    color: #000;
+    color: #1e1e1e;
 }
 
 a:before, a:after {
@@ -237,7 +256,7 @@ a:hover:before, a:hover:after {
     -webkit-transition: -webkit-transform 0.2s ease-out;
     -ms-transition: -ms-transform 0.2s ease-out;
     transition: transform 0.2s ease-out;
-    border: solid 2px white;
+    border: solid 2px #ebebeb;
 }
 
 .profile-picture img:hover {
@@ -248,7 +267,7 @@ a:hover:before, a:hover:after {
 }
 
 .parallax-background {
-    background-image: url("images/background.png");
+    background-image: url("images/background.jpg");
     min-height: 500px;
     background-attachment: fixed;
     background-position: center;
@@ -269,11 +288,11 @@ a:hover:before, a:hover:after {
 }
 
 .full-size .slider {
-    border: solid 2px white;
+    border: solid 2px #ebebeb;
 }
 
 .full-size-2 .slider {
-    border: solid 2px #f6f6f6;
+    border: solid 2px #e3e3e3;
 }
 
 .slide {
@@ -282,11 +301,11 @@ a:hover:before, a:hover:after {
 }
 
 .full-size .slide {
-    border: solid 2px white;
+    border: solid 2px #ebebeb;
 }
 
 .full-size-2 .slide {
-    border: solid 2px #f6f6f6;
+    border: solid 2px #e3e3e3;
 }
 
 .slide img {
