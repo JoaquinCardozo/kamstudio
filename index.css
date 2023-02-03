@@ -343,11 +343,11 @@ a:hover:before, a:hover:after {
     }
 
     #intro h2 {
-        font-size: 3.75em;
+        font-size: 60px;
     }
 
     #intro p {
-        font-size: 1.5em;
+        font-size: 25px;
     }
 
     .more {
@@ -377,7 +377,7 @@ a:hover:before, a:hover:after {
     }
 
     .full-size h2, .full-size-2 h2 {
-        font-size: 35px;
+        font-size: 45px;
     }
 
     .full-size h3, .full-size-2 h3 {
