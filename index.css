@@ -325,8 +325,12 @@ a:hover:before, a:hover:after {
 }
 
 @media screen and (max-width: 1000px) {
+    #intro, #about, #games {
+        width: 100%;
+        padding: 0;
+    }
+
     #intro {
-        padding: 7em 3em 5em 3em;
         height: 50%;
     }
 
@@ -348,6 +352,12 @@ a:hover:before, a:hover:after {
 
     .profile-picture {
         width: 100%;
+        max-width: unset;
+    }
+
+    .full-size, .full-size-2 {
+        margin: 4em 0;
+        padding: 4em 0;
     }
 
     .full-size h2, .full-size-2 h2 {
@@ -370,6 +380,7 @@ a:hover:before, a:hover:after {
 
     .slider {
         width: 100%;
+        max-width: unset;
         height: 400px;
     }
 
