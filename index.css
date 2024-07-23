@@ -43,7 +43,8 @@ footer {
     display: inline-block;
     font-size: 1.75em;
     opacity: 1;
-    padding: 0.35em;
+    padding-top: 0.35em;
+    padding-bottom: 0.35em;
     position: relative;
     z-index: 1;
     line-height: 1.75em;
@@ -51,7 +52,7 @@ footer {
     font-weight: 800;
     letter-spacing: 0.225em;
     line-height: 1.75em;
-    margin: 0 0 1em 0;
+    margin: 0 0 0.5em 0;
     text-transform: uppercase;
 }
 
@@ -77,9 +78,24 @@ footer {
     background: #e1e1e1;
     content: '';
     display: block;
-    height: 2px;
+    height: 3px;
     position: absolute;
     width: 100%;
+}
+
+#intro h2:before, #intro h2:after {
+  animation-duration: 3s;
+  animation-name: line;
+}
+
+@keyframes line {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 100%;
+  }
 }
 
 #intro p, #contact p {
@@ -103,7 +119,7 @@ footer {
     transform: translateY(0);
     border: none;
     bottom: 0;
-    height: 12em;
+    height:8em;
     left: 50%;
     letter-spacing: 0.225em;
     margin-left: -8.5em;
@@ -113,14 +129,13 @@ footer {
     position: absolute;
     text-align: center;
     text-transform: uppercase;
-    width: 16em;
     z-index: 1;
 }
 
 #intro .more a {
     text-decoration: none;
     color: inherit;
-    font-size: 1em;
+    font-size: 0.8em;
 }
 
 #intro .more:after {
@@ -170,7 +185,7 @@ footer {
 }
 
 .full-size p, .full-size-2 p {
-    font-size: 0.8em;
+    font-size: 1em;
     letter-spacing: 0.225em;
     text-transform: uppercase;
     text-align: center;
@@ -213,9 +228,8 @@ a:hover:before, a:hover:after {
     background-size: contain;
     content: '';
     display: inline-block;
-    height: 1em;
+    height: 15px;
     left: 50%;
-    vertical-align: top;
     width: 1em;
     margin-right: 0.3em;
 }
@@ -260,7 +274,6 @@ a:hover:before, a:hover:after {
     -webkit-transition: -webkit-transform 0.2s ease-out;
     -ms-transition: -ms-transform 0.2s ease-out;
     transition: transform 0.2s ease-out;
-    border: solid 2px #ebebeb;
 }
 
 .profile-picture img:hover {
@@ -333,16 +346,16 @@ a:hover:before, a:hover:after {
 
 @media screen and (max-width: 1000px) {
     body {
-        font-size: 25px;
+        font-size: 20px;
     }
 
     #intro, #about, #games {
-        width: 100%;
+        width: 99%;
         padding: 0;
     }
 
     #intro {
-        height: 50%;
+        height: 100%;
     }
 
     #intro h2 {
@@ -353,13 +366,17 @@ a:hover:before, a:hover:after {
         font-size: 25px;
     }
 
-    .more {
-        display: none;
+     #intro .more a {
+        font-size: 20px;
+    }
+
+    #intro h2:before, #intro h2:after {
+        height: 7px;
     }
 
     #about p {
-        text-align: justify;
-        font-size: 25px;
+        text-align: center;
+        font-size: 12px;
     }
 
     .profile-picture {
@@ -384,18 +401,18 @@ a:hover:before, a:hover:after {
     }
 
     .full-size h3, .full-size-2 h3 {
-        font-size: 35px;
+        font-size: 25px;
     }    
 
     .full-size p, .full-size-2 p {
-        line-height: 1.5em;
-        font-size: 25px;
+        line-height: 70px;
+        font-size: 12px;
     }
 
     .full-size .play:before, .full-size-2 .play:before {
         height: 2em;
         margin-right: 1.3em;
-        vertical-align: bottom;
+        vertical-align: baseline;
     }
 
     .slider {
@@ -404,11 +421,13 @@ a:hover:before, a:hover:after {
         height: 580px;
     }
 
-    #contact p {
-        font-size: 20px;
+    #contact p, #contact a {
+        font-size: 10px;
+        text-decoration: none;
     }
 
     footer {
-        font-size: 15px;
+        font-size: 10px;
+        font-weight: 500;
     }
 }
