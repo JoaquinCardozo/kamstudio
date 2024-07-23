@@ -103,9 +103,7 @@ footer {
     transform: translateY(0);
     border: none;
     bottom: 0;
-    color: inherit;
-    font-size: 0.8em;
-    height: 8.5em;
+    height: 12em;
     left: 50%;
     letter-spacing: 0.225em;
     margin-left: -8.5em;
@@ -117,7 +115,12 @@ footer {
     text-transform: uppercase;
     width: 16em;
     z-index: 1;
+}
+
+#intro .more a {
     text-decoration: none;
+    color: inherit;
+    font-size: 1em;
 }
 
 #intro .more:after {
