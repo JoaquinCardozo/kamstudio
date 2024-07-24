@@ -5,6 +5,7 @@ html{
 body {
 	font-family: Raleway, Helvetica, sans-serif;
     font-size: 11pt;
+    line-height: 25px;
 	color: #e1e1e1;
 	margin: 0px;
 }
@@ -170,7 +171,6 @@ footer {
 #about, #games {
     width: 80%;
     margin: auto;
-    margin-bottom: 50px;
 }
 
 #games p.game-description {
@@ -244,7 +244,7 @@ a:hover:before, a:hover:after {
     margin-right: 0.3em;
 }
 
-.full-size h2 {
+.full-size h2, .full-size-2 h2 {
     display: inline-block;
     font-size: 35px;
     opacity: 1;
@@ -256,7 +256,7 @@ a:hover:before, a:hover:after {
 }
 
 .full-size h3, .full-size-2 h3 {
-    font-size: 1.3em;
+    font-size: 1.6em;
     letter-spacing: 0.225em;
     text-transform: uppercase;
 }

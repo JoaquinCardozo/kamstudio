@@ -1,0 +1,32 @@
+#intro {
+    height:300px;
+    min-height: 50px;
+}
+
+.full-size {
+    padding: 2em;
+}
+
+.full-size p {
+    text-align: left;
+    max-width: 915px;
+}
+
+.profile-picture {
+    max-width: 915px;
+}
+
+#about .contact p {
+    text-align: center;
+}
+
+#about .contact a {
+    font-size: 1em;
+    font-weight: normal;
+}
+
+footer a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.2em;
+}   
