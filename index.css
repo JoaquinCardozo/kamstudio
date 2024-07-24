@@ -354,6 +354,17 @@ a:hover:before, a:hover:after {
     transform: scale(1.015);
 }
 
+.slider::-webkit-scrollbar {
+  -webkit-appearance: none;
+  height: 15px;
+}
+
+.slider::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, .5);
+  -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+}
+
 @media screen and (max-width: 1000px) {
     body {
         font-size: 20px;
@@ -440,3 +451,4 @@ a:hover:before, a:hover:after {
         font-weight: 500;
     }
 }
+
