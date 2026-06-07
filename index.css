@@ -365,6 +365,11 @@ a:hover:before, a:hover:after {
     transform: scale(1.015);
 }
 
+.slide video {
+    height: 100%;
+    width: auto;
+}
+
 @media screen and (max-width: 1000px) {
     body {
         font-size: 20px;
