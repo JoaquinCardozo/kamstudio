@@ -22,7 +22,7 @@ window.addEventListener('load', () => {
         data.isVisible = entry.isIntersecting;
       }
     });
-  }, { threshold: 0.1 });
+  }, { threshold: 1.0 });
 
   sliders.forEach(slider => {
     slidersData.set(slider, {
